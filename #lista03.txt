@@ -1,0 +1,96 @@
+1) A prefeitura de Recife criou um programa de
+empréstimo para seus funcionários com desconto em
+folha. O valor da prestação não pode ultrapassar 30%
+do salário bruto do funcionário. Faça um programa em
+Python que solicite o valor do salário bruto, o valor da
+prestação e informe se o empréstimo pode ou não ser
+concedido.
+	Validações:
+	Não aceitar salário <=0
+	Não aceitar prestação <=0
+
+
+2) Uma companhia aérea define os preços de suas
+passagens a partir da informação do destino bem como
+do número de passagens (se é apenas ida ou se inclui
+também a volta). Faça um programa em Python que
+solicite o destino bem como se o cliente deseja
+somente ida ou ida e volta. Informe o preço de acordo
+com a tabela abaixo (PS: a empresa não trabalha nos
+trechos sul e sudeste).
+	Região 		Ida 	Ida e Volta
+	Norte 		R$280 	  R$400
+	Nordeste 	R$380     R$628
+	Centro-Oeste 	R$620     R$1100
+
+
+3) Uma instituição bancária utiliza um dígito verificador
+para validar o número da conta (com 3 dígitos) de seus
+clientes. Faça um programa em Python que solicite o
+número da conta e calcule o dígito verificador. Os
+passos para calcular o dígito verificador são:
+Ex: Número da conta = 235.
+	1) somar o número da conta com o seu inverso. Ex: 235 + 532 = 767
+	2) Multiplicar cada digito do número obtido no passo anterior pela sua
+	ordem posicional e somar esses resultados. O último digito do número
+	obtido é o dígito verificador.
+	– Ex: 7 x 1 + 6 x 2 + 7 x 3 = 40 (dígito verificador ! 0).
+	• PS: Use o operador % e a divisão inteira para obter o dígito verificador.
+
+
+4) Faça o teste de mesa para numero_1= 15 e numero_2= 6
+resultado = ((numero_1%2)*3)+(13-2+numero_2)
+Responda:
+	a) Qual o conteúdo da variável resultado quando termina o
+	algoritmo?
+	b) Analise o pseudocódigo e responda: o que mostrará na tela?
+	c) Reescrever o algoritmo utilizando a linguagem de programação
+	Python. 
+
+
+5) Utilizando a tabela de valores abaixo, faça um algoritmo para o ESTACIONAMENTO SEMPRE BEM-VINDO
+que seja capaz de mostrar na tela, o valor que o cliente deve pagar pelo tempo que seu veículo ficou
+estacionado.
+		Tabela de Valores -Estacionamento SEMPRE BEM-VINDO
+	   	        Tempo de permanência (em minutos)
+       | até 15 minutos  |    de 16 a 180 minutos   |     acima de 180 minutos
+Moto   |    Grátis 	 |        R$17,00 	    | + 0,10 por minuto adicional
+Carro  |   Grátis        |        R$20,00           | + 0,15 por minuto adicional
+
+Exemplo: O cliente deixou estacionado sua moto por 204 minutos, então ele deve pagar R$ 19,40 (R$ 17,00
++ R$ 2,40).
+
+
+6) Faça um programa em Python que:
+	a) Receba do usuário os dados de um produto específico:
+	   - Preço unitário
+	   - País de origem (1-Brasil, 2-México,3-Outros)
+	   - Meio de Transporte (T-Terrestre, F-Fluvial, A-Aéreo)
+	   - Carga Perigosa (S-Sim, N-Não)
+	b) O algoritmo deve calcular:
+	   - Valor do Imposto
+	   - Valor do Transporte
+	   - Valor do Seguro
+
+Regras para cálculo:
+	 	       Valor do Imposto
+	Preço Unitário 	      |  Percentual de Imposto sobre o
+			      |          preço unitário
+	Até R$ 100,00         |              5%
+	Maior que R$ 100,00   |             20%
+
+			Valor do Transporte
+	Carga Perigosa  |  País de Origem  |  Valor do Transporte
+		S 	|	1 	   |       R$21,00
+		S 	|	2 	   |       R$27,00
+		S 	|	3 	   |       R$50,00
+		N	|	1 	   |       R$21,00
+		N 	|	2	   |       R$25,00
+		N 	|	3 	   |       R$40,00
+
+Valor do Seguro: Os produtos que vem do México e os produtos que utilizam transporte aéreo
+pagam metade do valor do seu preço unitário como seguro. Os demais produtos não pagam
+seguro.
+
+	c) Mostrar na tela: (1.5)
+		Preço final (preço unitário + impostos + valor do transporte + seguro. 
